@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus-w6tp
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/ktsao-tenant/devfile-sample-code-with-quarkus/devfile-sample-code-with-quarkus-w6tp@sha256:baf3e149378827f17b8845d1cf77f29a45e480be3fbbe7f870ce11e83651289f
+        name: my-java-quarkus
+        resources: {}
+status: {}
